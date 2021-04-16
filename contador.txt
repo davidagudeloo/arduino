@@ -1,0 +1,19 @@
+//contador de 1 a 10 segundos
+int contador=0;
+
+void setup()
+{
+  Serial.begin(9600);
+  Serial.println("contador hasta 10 segundos");
+}
+
+void loop()
+{
+  contador++;
+  Serial.println(contador);
+  if(contador==10)
+  {
+  	contador=0;
+  }
+  delay(1000);
+}
