@@ -9,7 +9,7 @@ void loop()
   if(Serial.available())
   {
     char a=Serial.read();
-    Serial.println(a);
+    Serial.println(a);    //Serial.write(a)-> suele retornar char
 
   }
 }
